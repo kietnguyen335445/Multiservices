@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: rupalatha089/checkoutservice
+          image: rupalatha089/checkoutservice:latest
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/recommendationservice
+        image: rupalatha089/recommendationservice:latest
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: rupalatha089/frontend
+          image: rupalatha089/frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/paymentservice
+        image: rupalatha089/paymentservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: sapios/productcatalogservice
+        image: moha1992/productcatalogservice:latest
         ports:
         - containerPort: 3550
         env:
@@ -401,7 +401,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/cartservice
+        image: rupalatha089/cartservice:latest
         ports:
         - containerPort: 7070
         env:
@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: rupalatha089/loadgenerator
+        image: rupalatha089/loadgenerator:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -496,7 +496,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/currencyservice
+        image: rupalatha089/currencyservice:latest
         ports:
         - name: grpc
           containerPort: 7000
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: rupalatha089/shippingservice
+        image: rupalatha089/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/adservice
+        image: rupalatha089/adservice:latest
         ports:
         - containerPort: 9555
         env:
