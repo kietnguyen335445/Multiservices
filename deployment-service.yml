@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: okteto/frontend
+          image: rupalatha089/frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: vhiveease/onlineshop-productcatalogservice
+        image: edenfed/productcatalogservice:v2.2
         ports:
         - containerPort: 3550
         env:
