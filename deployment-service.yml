@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: raftt/onlineboutique-productcatalog:latest
+        image: haseebh/productcatalogservice:313
         ports:
         - containerPort: 3550
         env:
