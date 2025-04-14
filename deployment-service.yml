@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: eberkley/microservices-frontend:505abf9b
+          image: raftt/onlineboutique-frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
