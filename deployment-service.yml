@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: sapios/emailservice
+        image: rupalatha089/emailservice:latest
         ports:
         - containerPort: 8080
         env:
