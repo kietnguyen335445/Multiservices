@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: rupalatha089/frontend:latest
+          image: todereanrazvan/frontend:8d864ea
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: edenfed/productcatalogservice:v2.2
+        image: annahbe/productcatalogservice:latest
         ports:
         - containerPort: 3550
         env:
