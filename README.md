@@ -191,7 +191,10 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
   ```bash
   kubectl apply -f secret.yaml -n webapps
   ```
-
+- Run the following command to get a secret token
+  ```bash
+  kubectl describe secret mysecretname -n webapps
+  ```
 ## 🔧 Essential Tools Installed
 Installed via shell script:
 
