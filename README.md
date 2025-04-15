@@ -88,9 +88,24 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 
 ### Kubernetes Resources
 - Namespace: webapps
-
+  - Create a namesapce:
+    ```bash
+    kubectl create namespace webapps
+    kubectl get namespaces
+    ```
 - ServiceAccount: jenkins
-
+  - Creating Service Account:
+    ```bash
+    nano svc-acc.yaml
+    apiVersion: v1
+    kind: ServiceAccount
+    metadata:
+      name: jenkins
+      namespace: webapps
+    ```
+    ```bash
+    kubectl apply -f svc-acc.yaml
+    ```
 - Role & RoleBinding for RBAC
 
 - Secret for service account token
