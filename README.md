@@ -1,4 +1,4 @@
-# Deploying 10 Microservices on Kubernetes via Jenkins CI/CD Pipeline
+![webhook](https://github.com/user-attachments/assets/70d36110-e27c-44a1-b438-1fae40865f9e)# Deploying 10 Microservices on Kubernetes via Jenkins CI/CD Pipeline
 
 ## 📌 Project Overview
 
@@ -284,12 +284,21 @@ Installed plugins:
     ```
     ![k8-token](https://github.com/user-attachments/assets/cd6f5150-95ed-4ab5-9ba4-331a244d3fe5)
 
-## Created multibranch pipeline for automatic builds and deployments.
+## Create jenkins pipeline
+- Click on New item and chose multibranch pipeline
+- Now choose git from add source option and paste the project repo url there
+ ![jenkin2](https://github.com/user-attachments/assets/fdbe22f7-fd1f-4a95-8089-9012c78acd68)
+![jenkin3](https://github.com/user-attachments/assets/c32923f0-ed0f-4ff3-8a37-b1100589b099)
 
 - Configured GitHub webhook for CI/CD triggering:
+  - Go to project repo and click on setting>>webhooks>>Add a webhook
+   ![webhook](https://github.com/user-attachments/assets/6915ed4e-d0f1-4ff2-9748-f17f5b4a893a)
+  - In Url section type
 ```bash
 http://<public_ip>:8080/multibranch-webhook-trigger/invoke?token=microservice
 ```
+![build](https://github.com/user-attachments/assets/d9960185-6ed7-44d7-b808-e9f8486c98b1)
+  - Copy the Load-balancer url and paste it on browser, using http
 # 📦 Microservices Deployment
 - 10 microservices pulled from GitHub repository.
 
