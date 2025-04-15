@@ -110,6 +110,8 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
   - Create role :
     ```bash
     nano app-role.yaml
+    ```
+    ```bash
     apiVersion: rbac.authorization.k8s.io/v1
     kind: Role
     metadata:
@@ -154,6 +156,8 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
   - Bind the role to service account:
     ```bash
     nano role-bind.yaml
+    ```
+    ```bash
     apiVersion: rbac.authorization.k8s.io/v1
     kind: RoleBinding
     metadata:
