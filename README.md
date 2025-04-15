@@ -65,3 +65,35 @@ Java 17 (Temurin)
 kubectl
 
 eksctl
+
+🧪 Jenkins Setup
+Installed plugins:
+
+Docker
+
+Kubernetes
+
+Multibranch Scan Webhook Trigger
+
+Configured credentials:
+
+DockerHub (id: docker)
+
+GitHub (id: github)
+
+Kubernetes Token (id: k8-token)
+
+Created multibranch pipeline for automatic builds and deployments.
+
+Configured GitHub webhook for CI/CD triggering:
+```bash
+http://<public_ip>:8080/multibranch-webhook-trigger/invoke?token=microservice
+```
+# 📦 Microservices Deployment
+10 microservices pulled from GitHub repository.
+
+Each deployed into the webapps namespace on EKS.
+
+Services exposed via LoadBalancer for public access.
+
+
