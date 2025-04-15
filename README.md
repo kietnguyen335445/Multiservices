@@ -299,11 +299,5 @@ http://<public_ip>:8080/multibranch-webhook-trigger/invoke?token=microservice
 ```
 ![build](https://github.com/user-attachments/assets/d9960185-6ed7-44d7-b808-e9f8486c98b1)
   - Copy the Load-balancer url and paste it on browser, using http
-# 📦 Microservices Deployment
-- 10 microservices pulled from GitHub repository.
-
-- Each deployed into the webapps namespace on EKS.
-
-- Services exposed via LoadBalancer for public access.
 
 
