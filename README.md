@@ -43,57 +43,57 @@ eksctl create nodegroup --cluster=EKS-1 --region=ap-southeast-1 --name=node2 --n
 aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 ```
 ### Kubernetes Resources
-Namespace: webapps
+- Namespace: webapps
 
-ServiceAccount: jenkins
+- ServiceAccount: jenkins
 
-Role & RoleBinding for RBAC
+- Role & RoleBinding for RBAC
 
-Secret for service account token
+- Secret for service account token
 
 ## 🔧 Essential Tools Installed
 Installed via shell script:
 
-Docker
+- Docker
 
-Jenkins
+- Jenkins
 
-AWS CLI
+- AWS CLI
 
-Java 17 (Temurin)
+- Java 17 (Temurin)
 
-kubectl
+- kubectl
 
-eksctl
+- eksctl
 
 # 🧪 Jenkins Setup
 Installed plugins:
 
-Docker
+- Docker
 
-Kubernetes
+- Kubernetes
 
-Multibranch Scan Webhook Trigger
+- Multibranch Scan Webhook Trigger
 
 ## Configured credentials:
 
-DockerHub (id: docker)
+- DockerHub (id: docker)
 
-GitHub (id: github)
+- GitHub (id: github)
 
-Kubernetes Token (id: k8-token)
+- Kubernetes Token (id: k8-token)
 
-Created multibranch pipeline for automatic builds and deployments.
+## Created multibranch pipeline for automatic builds and deployments.
 
-Configured GitHub webhook for CI/CD triggering:
+- Configured GitHub webhook for CI/CD triggering:
 ```bash
 http://<public_ip>:8080/multibranch-webhook-trigger/invoke?token=microservice
 ```
 # 📦 Microservices Deployment
-10 microservices pulled from GitHub repository.
+- 10 microservices pulled from GitHub repository.
 
-Each deployed into the webapps namespace on EKS.
+- Each deployed into the webapps namespace on EKS.
 
-Services exposed via LoadBalancer for public access.
+- Services exposed via LoadBalancer for public access.
 
 
