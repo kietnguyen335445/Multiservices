@@ -1,4 +1,4 @@
-![webhook](https://github.com/user-attachments/assets/70d36110-e27c-44a1-b438-1fae40865f9e)# Deploying 10 Microservices on Kubernetes via Jenkins CI/CD Pipeline
+# Deploying 10 Microservices on Kubernetes via Jenkins CI/CD Pipeline
 
 ## 📌 Project Overview
 
