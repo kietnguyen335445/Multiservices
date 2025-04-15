@@ -66,7 +66,7 @@ kubectl
 
 eksctl
 
-🧪 Jenkins Setup
+#🧪 Jenkins Setup
 Installed plugins:
 
 Docker
@@ -75,7 +75,7 @@ Kubernetes
 
 Multibranch Scan Webhook Trigger
 
-Configured credentials:
+## Configured credentials:
 
 DockerHub (id: docker)
 
