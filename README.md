@@ -107,7 +107,70 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
     kubectl apply -f svc-acc.yaml
     ```
 - Role & RoleBinding for RBAC
-
+  - Create role :
+    ```bash
+    nano app-role.yaml
+    apiVersion: rbac.authorization.k8s.io/v1
+    kind: Role
+    metadata:
+      name: app-role
+      namespace: webapps
+    rules:
+    - apiGroups:
+        - ""
+        - apps
+        - autoscaling
+        - batch
+        - extensions
+        - policy
+        - rbac.authorization.k8s.io
+    resources:
+      - pods
+      - componentstatuses
+      - configmaps
+      - daemonsets
+      - deployments
+      - events
+      - endpoints
+      - horizontalpodautoscalers
+      - ingress
+      - jobs
+      - limitranges
+      - namespaces
+      - nodes
+      - pods
+      - persistentvolumes
+      - persistentvolumeclaims
+      - resourcequotas
+      - replicasets
+      - replicationcontrollers
+      - serviceaccounts
+      - services
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+    ```
+    ```bash
+    kubectl -f apply app-role.yaml
+    ```
+  - Bind the role to service account:
+    ```bash
+    nano role-bind.yaml
+    apiVersion: rbac.authorization.k8s.io/v1
+    kind: RoleBinding
+    metadata:
+      name: app-rolebinding
+      namespace: webapps 
+    roleRef:
+      apiGroup: rbac.authorization.k8s.io
+      kind: Role
+      name: app-role 
+    subjects:
+    - namespace: webapps 
+      kind: ServiceAccount
+      name: jenkins 
+    ```
+    ```bash
+    kubectl -f apply role-bind.yaml
+    ```
 - Secret for service account token
 
 ## 🔧 Essential Tools Installed
