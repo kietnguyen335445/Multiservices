@@ -300,5 +300,5 @@ http://<public_ip>:8080/multibranch-webhook-trigger/invoke?token=microservice
 ![build](https://github.com/user-attachments/assets/d9960185-6ed7-44d7-b808-e9f8486c98b1)
   - Copy the Load-balancer url and paste it on browser, using http
 
-![web](https://github.com/user-attachments/assets/7e33b199-097e-4ed6-83ca-f0f23459e86b)
+
 
