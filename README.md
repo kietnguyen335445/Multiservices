@@ -58,9 +58,9 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
     ]
     }
 
-- Generated and configured access/secret keys on EC2 using `aws configure`.
+- Create a access keys and secret keys to work with awscli in base ec2 by go to User>>Create acess key>>Command Line Interface. Then download secret and acess keys file
+- Generated and configured access/secret keys on EC2 using `aws configure`. Use information in the earlier file downloaded
  
-
 ---
 
 ## ⚙️ Kubernetes Cluster (EKS)
