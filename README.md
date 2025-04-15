@@ -252,6 +252,13 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
   bash install.sh
   ```
 # 🧪 Jenkins Setup
+- Go to browser and type public_ip:8080
+![jenkin](https://github.com/user-attachments/assets/12410ce8-44b2-4efd-a526-6ec16b6f9ed5)
+- Run the command to get a password:
+  ```bash
+  cat /var/lib/jenkins/secrets/initialAdminPassword
+  ```
+- Then choose the "Install the suggested plugins" option
 Installed plugins:
 
 - Docker
@@ -259,7 +266,7 @@ Installed plugins:
 - Kubernetes
 
 - Multibranch Scan Webhook Trigger
-
+  ![plugin](https://github.com/user-attachments/assets/74ba0f94-92b1-4d03-8026-38899d22dedc)
 ## Configured credentials:
 
 - DockerHub (id: docker)
