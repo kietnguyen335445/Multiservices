@@ -34,13 +34,13 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
 
 ### Commands Used:
 ```bash
-eksctl create cluster --name=EKS-1 --region=ap-south-1 --zones=ap-south-1a,ap-south-1b --without-nodegroup
+eksctl create cluster --name=EKS-1 --region=ap-southeast-1 --zones=ap-southeast-1a,ap-southeast-1b --without-nodegroup
 
-eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster EKS-1 --approve
+eksctl utils associate-iam-oidc-provider --region ap-southeast-1 --cluster EKS-1 --approve
 
-eksctl create nodegroup --cluster=EKS-1 --region=ap-south-1 --name=node2 --node-type=t3.medium --nodes=3 ...
+eksctl create nodegroup --cluster=EKS-1 --region=ap-southeast-1 --name=node2 --node-type=t3.medium --nodes=3 ...
 
-aws eks update-kubeconfig --region ap-south-1 --name EKS-1
+aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 ```
 Kubernetes Resources
 Namespace: webapps
