@@ -68,8 +68,8 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
 ### Commands Used:
 ```bash
 eksctl create cluster --name=EKS-1 --region=ap-southeast-1 --zones=ap-southeast-1a,ap-southeast-1b --without-nodegroup
-![aaws2](https://github.com/user-attachments/assets/663eaec7-22cc-479f-8ced-64fe96917f27)
 ```
+![aaws2](https://github.com/user-attachments/assets/663eaec7-22cc-479f-8ced-64fe96917f27)
 ```
 eksctl utils associate-iam-oidc-provider --region ap-southeast-1 --cluster EKS-1 --approve
 ```
