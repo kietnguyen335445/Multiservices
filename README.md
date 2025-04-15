@@ -41,3 +41,27 @@ eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster EKS-1 --a
 eksctl create nodegroup --cluster=EKS-1 --region=ap-south-1 --name=node2 --node-type=t3.medium --nodes=3 ...
 
 aws eks update-kubeconfig --region ap-south-1 --name EKS-1
+```
+Kubernetes Resources
+Namespace: webapps
+
+ServiceAccount: jenkins
+
+Role & RoleBinding for RBAC
+
+Secret for service account token
+
+# 🔧 Essential Tools Installed
+Installed via shell script:
+
+Docker
+
+Jenkins
+
+AWS CLI
+
+Java 17 (Temurin)
+
+kubectl
+
+eksctl
