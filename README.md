@@ -1,8 +1,8 @@
-# Deploying 10 Microservices on Kubernetes via Jenkins CI/CD Pipeline
+# Deploying Microservices on Kubernetes via Jenkins CI/CD Pipeline
 
 ## 📌 Project Overview
 
-This project demonstrates the end-to-end automation of deploying 10 microservices into a Kubernetes cluster (Amazon EKS) using Jenkins CI/CD pipelines. The entire setup, from infrastructure provisioning to automated builds and deployment, is hosted on AWS using a base EC2 instance.
+This project demonstrates the end-to-end automation of deploying microservices into a Kubernetes cluster (Amazon EKS) using Jenkins CI/CD pipelines. The entire setup, from infrastructure provisioning to automated builds and deployment, is hosted on AWS using a base EC2 instance.
 
 ## Services:
 - Email service
