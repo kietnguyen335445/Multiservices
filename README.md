@@ -80,7 +80,10 @@ eksctl create nodegroup --cluster=EKS-1 --region=ap-southeast-1 --name=node2 --n
 ```
 aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 ```
+![EKS](https://github.com/user-attachments/assets/062c355a-0fbf-4654-980d-2ab3f1f050f2)
 
+
+![node](https://github.com/user-attachments/assets/ad42db17-1b3d-4bfe-b5f6-26172e96ede7)
 
 
 ### Kubernetes Resources
