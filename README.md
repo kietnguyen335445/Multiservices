@@ -42,7 +42,7 @@ eksctl create nodegroup --cluster=EKS-1 --region=ap-southeast-1 --name=node2 --n
 
 aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 ```
-Kubernetes Resources
+### Kubernetes Resources
 Namespace: webapps
 
 ServiceAccount: jenkins
@@ -51,7 +51,7 @@ Role & RoleBinding for RBAC
 
 Secret for service account token
 
-# 🔧 Essential Tools Installed
+## 🔧 Essential Tools Installed
 Installed via shell script:
 
 Docker
@@ -66,7 +66,7 @@ kubectl
 
 eksctl
 
-#🧪 Jenkins Setup
+# 🧪 Jenkins Setup
 Installed plugins:
 
 Docker
