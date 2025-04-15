@@ -176,6 +176,21 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
     kubectl -f apply role-bind.yaml
     ```
 - Secret for service account token
+  ```bash
+  nano secret.yaml
+  ```
+  ```bash
+  apiVersion: v1
+  kind: Secret
+  type: kubernetes.io/service-account-token
+  metadata:
+    name: mysecretname
+    annotations:
+    kubernetes.io/service-account.name: jenkins
+  ```
+  ```bash
+  kubectl apply -f secret.yaml -n webapps
+  ```
 
 ## 🔧 Essential Tools Installed
 Installed via shell script:
