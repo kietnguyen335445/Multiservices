@@ -266,14 +266,23 @@ Installed plugins:
 - Kubernetes
 
 - Multibranch Scan Webhook Trigger
+
   ![plugin](https://github.com/user-attachments/assets/74ba0f94-92b1-4d03-8026-38899d22dedc)
 ## Configured credentials:
+- Setup docker credentials
+  - Go to jenkins →manage jenkins →credentials →global →add credentials
+  ![docker-cre](https://github.com/user-attachments/assets/933a08a4-e5a9-443f-ae2a-469fed26c788)
 
-- DockerHub (id: docker)
-
-- GitHub (id: github)
+- Setup github credentials use token
+  - Go to github -> setting -> develop setting -> personal access token -> token(classic) -> generate new
+  ![github](https://github.com/user-attachments/assets/58fd0efa-60a3-4bae-b0f4-1d00c88567d2)
 
 - Kubernetes Token (id: k8-token)
+  - Run the following command to get kubernetes token:
+    ```bash
+       kubectl describe secret mysecretname -n webapps
+    ```
+    ![k8-token](https://github.com/user-attachments/assets/cd6f5150-95ed-4ab5-9ba4-331a244d3fe5)
 
 ## Created multibranch pipeline for automatic builds and deployments.
 
