@@ -34,10 +34,18 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
 - **Instance Type**: t2.large
 - **Storage**: 30 GB
 - **Open Ports**: 22, 80, 443, 8080
+  
 
 ### 2. IAM User
-- Created IAM user with necessary policies for EKS, EC2, IAM, CloudFormation.
+- Go to aws console and search for IAM and then click on user>>create user
+- Created IAM user with necessary policies for EKS, EC2, IAM, CloudFormation:
+  - AmazonEC2FullAccess
+  - AmazonEKSClusterPolicy
+  - AmazonEKSWorkerNodePolicy
+  - AWSCloudFormationFullAccess
+  - IAMFullAccess
 - Generated and configured access/secret keys on EC2 using `aws configure`.
+  ![aws1](https://github.com/user-attachments/assets/d06e6662-43bd-4668-b699-cdb9e31c728a)
 
 ---
 
