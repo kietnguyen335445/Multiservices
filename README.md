@@ -68,20 +68,19 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
 ### Commands Used:
 ```bash
 eksctl create cluster --name=EKS-1 --region=ap-southeast-1 --zones=ap-southeast-1a,ap-southeast-1b --without-nodegroup
-
 ![aaws2](https://github.com/user-attachments/assets/663eaec7-22cc-479f-8ced-64fe96917f27)
-
+```
+```
 eksctl utils associate-iam-oidc-provider --region ap-southeast-1 --cluster EKS-1 --approve
-
+```
+```
 eksctl create nodegroup --cluster=EKS-1 --region=ap-southeast-1 --name=node2 --node-type=t3.medium --nodes=3 --nodes-min=2 --nodes-max=4 --node-volume-size=20 --ssh-access --ssh-public-key=my-ec2-keypair --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access
-
+```
 ![aws3](https://github.com/user-attachments/assets/960f1132-da3b-461d-b17f-ccd45d9cdeb3)
-
+```
 aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 ```
-![aaws2](https://github.com/user-attachments/assets/663eaec7-22cc-479f-8ced-64fe96917f27)
 
-![aws3](https://github.com/user-attachments/assets/960f1132-da3b-461d-b17f-ccd45d9cdeb3)
 
 
 ### Kubernetes Resources
