@@ -247,7 +247,10 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
   sudo mv /tmp/eksctl /usr/local/bin
   eksctl version
   ```
-
+- Run the command:
+  ```bash
+  bash install.sh
+  ```
 # 🧪 Jenkins Setup
 Installed plugins:
 
