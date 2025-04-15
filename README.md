@@ -56,7 +56,7 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
             "Resource": "*"
         }
     ]
-    }```
+    }
 
 - Generated and configured access/secret keys on EC2 using `aws configure`.
  
