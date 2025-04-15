@@ -45,6 +45,18 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
   - AWSCloudFormationFullAccess
   - IAMFullAccess
   ![aws1](https://github.com/user-attachments/assets/d06e6662-43bd-4668-b699-cdb9e31c728a)
+- Create an Inline policy for eks
+    ```bash
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "eks:*",
+            "Resource": "*"
+        }
+    ]
+    }```
 
 - Generated and configured access/secret keys on EC2 using `aws configure`.
  
