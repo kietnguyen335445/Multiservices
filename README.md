@@ -44,8 +44,10 @@ This project demonstrates the end-to-end automation of deploying 10 microservice
   - AmazonEKSWorkerNodePolicy
   - AWSCloudFormationFullAccess
   - IAMFullAccess
-- Generated and configured access/secret keys on EC2 using `aws configure`.
   ![aws1](https://github.com/user-attachments/assets/d06e6662-43bd-4668-b699-cdb9e31c728a)
+
+- Generated and configured access/secret keys on EC2 using `aws configure`.
+ 
 
 ---
 
