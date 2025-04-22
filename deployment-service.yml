@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: rupalatha089/emailservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: rupalatha089/checkoutservice:latest
+          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/recommendationservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/recommendationservice
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: raftt/onlineboutique-frontend:latest
+          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -290,7 +290,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/paymentservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice
         ports:
         - containerPort: 50051
         env:
@@ -342,7 +342,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: productcatalogservice
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice
         ports:
         - containerPort: 3550
         env:
@@ -394,7 +394,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/cartservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/cartservice
         ports:
         - containerPort: 7070
         env:
@@ -458,7 +458,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: rupalatha089/loadgenerator:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -489,7 +489,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/currencyservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/currencyservice
         ports:
         - name: grpc
           containerPort: 7000
@@ -541,7 +541,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: rupalatha089/shippingservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -647,7 +647,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rupalatha089/adservice:latest
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice
         ports:
         - containerPort: 9555
         env:
