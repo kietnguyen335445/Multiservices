@@ -301,4 +301,8 @@ http://<public_ip>:8080/multibranch-webhook-trigger/invoke?token=microservice
   - Copy the Load-balancer url and paste it on browser, using http
 
 
+![online-boutique-frontend-1](https://github.com/user-attachments/assets/8991ecd7-04b6-4b76-9a89-f37649a906f9)
+
+![online-boutique-frontend-2](https://github.com/user-attachments/assets/0b918904-56cb-4d65-9ae7-d9aa830c6227)
+
 
